@@ -30,9 +30,14 @@ securityDefinitions:
     type: apiKey
     name: Dealer-Number
     in: header
+  Brand:
+    type: apiKey
+    name: Brand
+    in: header
 security:
   - Country: []
   - Dealer-Number: []
+  - Brand: []
 definitions:
   ServiceInfoType:
     type: object
